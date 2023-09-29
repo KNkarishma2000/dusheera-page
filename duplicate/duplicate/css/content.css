@@ -1,0 +1,514 @@
+.hero-img{
+   
+        width:100%;
+        height:50vh;
+        background:url('../img/Untitled\ design.png')no-repeat center center/cover;
+
+}
+div.tabs button.active {
+    /* border-bottom: 8px solid red; */
+    background:linear-gradient(#FF8674,#FD1C03);
+}
+.hero-img{
+    background-position: center;
+}
+.hero-img p{
+    display:none
+}
+.animation{
+    right:10%;
+    top:15%;
+}
+/* main-container */
+.devis{
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.main-image{
+    text-align: center;
+    padding:40px;
+    padding-top:0px;
+    padding-left: 0px;
+}
+.main-image img{
+    width:100%;
+    height:auto;
+
+    &:hover{
+        opacity:0.8;
+    }
+ 
+}
+
+.devi p{
+  
+    font-size: 25px;
+  padding-bottom:60px;
+  
+
+}
+.main-text{
+    padding:40px;
+    padding-bottom: 15px;;
+    padding-left: 0px;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+.list{
+    padding-top:40px;
+ display:flex;
+ justify-content: space-evenly;
+}
+.list{
+    padding-left:0px;
+}
+.list p{
+    text-align: left;
+    
+    font-size: 40px;
+}
+/* tabs */
+.tabs{
+    display:flex; 
+ 
+  
+    justify-content: space-evenly;
+    margin-left:10%;
+    margin-right: 10%;   
+    /* margin-bottom:20px; */
+    /* background-color: yellow; */
+}
+.tabs button{
+    border:none;
+  /* border-left:4px solid red; */
+    width:100%;
+    padding:20px;
+    font-size: 35px;
+    cursor: pointer;
+    background-color: transparent;
+
+    &:hover{
+        background:linear-gradient(#FF8674,#FD1C03);
+    }
+}
+/* overlay */
+.overlay{
+    position: absolute;
+   text-decoration: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    color:white;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+/* videos */
+.videos{
+    margin-left:10%;
+    margin-right:10%;
+}
+.video{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:20px;
+}
+.video-content img{
+width:100%;
+}
+.video-heading{
+    font-size: 50px;
+    /* background-color: yellow; */
+    padding:10px;
+    margin-top: 20px;
+    margin-bottom:10px;
+    padding-left:10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.video-content a{
+    text-decoration: none;
+    color:black;
+    font-size: 30px;
+}
+.video-content{
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+/* chanting */
+.images{
+    margin-left:10%;
+    margin-right: 10%;
+}
+.image {
+    display:grid;
+    grid-template-columns: repeat(4 ,1fr);
+}
+.image-content img{
+    width:100%;
+}
+.image-content{
+
+
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+}
+.images-heading{
+    font-size: 40px;
+    /* background-color: yellow; */
+    padding:10px;
+    margin-top: 20px;
+    font-weight: 0;
+    margin-bottom:20px;
+    padding-left:10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* strotam */
+.strotam{
+    margin-left:10%;
+    margin-right:10%;
+    transform: translateY(10%);
+}
+.strotam-content{
+    display:flex;
+}
+.strotam-main{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:30px;
+}
+/* .strotam-1:hover .overlay{
+    cursor: pointer;
+    opacity:1;
+} */
+/* .strotam-1{
+    position: relative;
+    margin-right:40px;
+    width:100%;
+} */
+/* .strotam-heading{
+    font-size: 40px;
+   
+    padding:10px;
+    margin-top: 20px;
+    margin-bottom:20px;
+    padding-left:40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+.strotam-1 img{
+width:100%;
+height:100%;
+
+&:hover{
+    opacity:0.9;
+}
+}
+.strotam-main img{
+
+    &:hover{
+        
+        box-shadow: 0 0 10px rgba(0,0,0,0.8);
+        transform: scale(1.01);
+    }
+}
+.strotam-main a{
+ text-decoration: none;
+ color:black;
+ font-size: 30px;
+}
+
+
+@media(max-width : 700px){
+    .hero-img {
+   height:20vh;
+    }
+    .tabs{
+  
+        display:flex;
+      
+        
+       
+    }
+    .tabs button{
+      
+        width:30%;
+        padding:20px;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: transparent;
+        border:none;
+        &:hover{
+            background:linear-gradient(#FF8674,#FD1C03);
+        }
+    }
+   
+    .devi{
+        display:flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .main-image{
+        padding:10px;
+        padding-left: 0px;
+    }
+ 
+    .main-text{
+        padding:10px;
+        padding-left: 0px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       text-align: center;
+    }
+    .list{
+        display: flex;
+        
+    }
+    .list p{
+        padding-top:10px;
+        padding-right:15px;
+        text-align: left;
+        
+        font-size: 15px;
+    }
+
+    /* videos */
+    .video-heading{
+        font-size: 30px;
+        padding-left: 0;
+    }
+    .video{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* images */
+    .images-heading{
+        font-size: 30px;
+        padding-left:0px;
+    }
+    .image{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-gap:10px;
+    }
+    /* strotam */
+    .strotam-heading{
+        font-size:10px;
+    }
+
+    .strotam-1{
+        margin-right:5px;
+        
+    }
+    
+    .strotam-content h2
+    {
+        font-size: 20px;
+    }
+    .overlay{
+        height:90%;
+    }
+ 
+    .strotam-1 img
+    {
+       width:100%;
+       height:90%;
+    }
+    
+    .strotam-box img
+    {
+        width:90%;
+    }
+
+  
+  .animation h1{
+     padding:10px;
+      font-size: 30px;
+   
+   
+  }
+  .animation{
+    top:0%;
+    right:0;
+  }
+  .navigation{
+    width:100%;
+    display:flex;
+  justify-content: flex-end;
+  position: absolute;
+  top:0;
+
+
+}
+
+.navigation a{
+   
+    /* width:50%; */
+  padding: 10px;
+
+    font-size: 20px;
+    text-decoration: none;
+    color:white;
+    &:hover{
+        border-bottom:3px solid red;
+    }
+}
+}
+@media(max-width : 500px){
+    .hero-img {
+   height:20vh;
+    }
+    .tabs{
+  
+        display:flex;
+      
+        
+       
+    }
+    .tabs button{
+      
+        width:30%;
+        padding:20px;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: transparent;
+        border:none;
+        &:hover{
+            background:linear-gradient(#FF8674,#FD1C03);
+        }
+    }
+   
+    .devi{
+        display:flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .main-image{
+        padding:10px;
+        padding-left: 0px;
+    }
+ 
+    .main-text{
+        padding:10px;
+        padding-left: 0px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       text-align: center;
+    }
+    .list{
+        display: flex;
+        
+    }
+    .list p{
+        padding-top:10px;
+        padding-right:15px;
+        text-align: left;
+        
+        font-size: 15px;
+    }
+
+    /* videos */
+    .video-heading{
+        font-size: 30px;
+        padding-left: 0;
+    }
+    .video{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* images */
+    .images-heading{
+        font-size: 30px;
+        padding-left:0px;
+    }
+    .image{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-gap:10px;
+    }
+    /* strotam */
+    .strotam-heading{
+        font-size:10px;
+    }
+
+    .strotam-1{
+        margin-right:5px;
+        
+    }
+    
+    .strotam-content h2
+    {
+        font-size: 20px;
+    }
+    .overlay{
+        height:90%;
+    }
+ 
+    .strotam-1 img
+    {
+       width:100%;
+       height:90%;
+    }
+    
+    .strotam-box img
+    {
+        width:90%;
+    }
+
+  
+  .animation h1{
+     padding:10px;
+      font-size: 30px;
+     
+  }
+  .animation{
+    top:0%;
+    right:0;
+  }
+  .navigation{
+    width:100%;
+    display:flex;
+  justify-content: flex-end;
+  position: absolute;
+  top:0;
+
+
+}
+
+.navigation a{
+   
+    /* width:50%; */
+  padding: 10px;
+
+    font-size: 20px;
+    text-decoration: none;
+    color:white;
+    &:hover{
+        border-bottom:3px solid red;
+    }
+}
+}
